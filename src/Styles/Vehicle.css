@@ -1,0 +1,215 @@
+/* Container Styles */
+.land-registration-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .land-registration-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  /* Form Styles */
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    color: #444;
+    font-size: 16px;
+  }
+  
+  /* Input Styles */
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group textarea,
+  .form-group select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="number"]:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Phone Input Group */
+  .phone-group {
+    margin-bottom: 15px;
+  }
+  
+  .phone-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .country-code {
+    width: 80px;
+  }
+  
+  .phone-number {
+    flex: 1;
+  }
+  
+  /* Select Styles */
+  .vehicle-type {
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .vehicle-type:hover {
+    border-color: #007bff;
+  }
+  
+  /* Textarea Styles */
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Error Message Styles */
+  .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  /* Submit Button Styles */
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .land-registration-container {
+        margin: 20px;
+        padding: 15px;
+    }
+  
+    .phone-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .country-code {
+        width: 100%;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group textarea,
+    .form-group select {
+        padding: 10px;
+    }
+  
+    .submit-button {
+        padding: 12px 20px;
+    }
+  }
+  
+  /* Hover Effects */
+  .form-group input[type="text"]:hover,
+  .form-group input[type="number"]:hover,
+  .form-group textarea:hover,
+  .form-group select:hover {
+    border-color: #80bdff;
+  }
+
+  /* VehicleSearch.css */
+
+.vehicle-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.vehicle-types {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.vehicle-type {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.vehicle-type:hover, .vehicle-type.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.vehicle-icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vehicle-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.vehicle-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.vehicle-icon:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}

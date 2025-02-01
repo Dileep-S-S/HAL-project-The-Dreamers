@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    height: 60px;
+    background-color: #112D4E;
+    border-bottom: 2px solid #DBE2EF; 
+    z-index: 100;
+    padding: 40px;
+}
+
+.icon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links .btn-primary {
+    background-color: #3F72AF; /* Muted Blue */
+    color: white;
+    border: none;
+}
+
+.nav-links .btn-outline-primary {
+    background-color: transparent;
+    color: #3F72AF; /* Muted Blue */
+    border: 2px solid #3F72AF; /* Muted Blue */
+}
+
+.nav-links .btn-outline-primary:hover {
+    background-color: #112D4E; /* Dark Blue */
+    color: white;
+}
+
+.headbutton {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff; /* Dark Blue */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.headbutton:hover {
+    color: #fff;
+    background-color: #3F72AF; /* Muted Blue */
+}
+
+.active {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #3F72AF; /* Muted Blue */
+}

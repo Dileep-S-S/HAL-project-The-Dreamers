@@ -1,0 +1,98 @@
+/* AboutUs.css */
+
+.about-us {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .about-us header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .about-us section {
+    margin-bottom: 20px;
+  }
+  
+  .about-us h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e;
+  }
+  
+  .about-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-us ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-us footer {
+    margin-top: 40px;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer-left {
+    font-size: 1rem;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right .social-media {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-right .social-media a {
+    margin-left: 15px;
+  }
+  
+  .footer-right .social-media .social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-right .social-media .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .about-us a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .about-us a:hover {
+    text-decoration: underline;
+  }

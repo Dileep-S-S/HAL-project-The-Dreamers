@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #173753;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Profile Image */
+  .profile-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #1D70A2;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Section Headers */
+  .section-header {
+    color: #1B4353;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Edit Button */
+  .edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1D70A2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background: #2892D7;
+    transform: scale(1.1);
+  }
+  
+  /* Contact & Info Sections */
+  p {
+    color: #173753;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  p:hover {
+    color: #1B4353;
+  }
+  
+  /* Skill Rating */
+  .skill-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-rating:hover {
+    transform: translateX(5px);
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1B4353;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:hover, .form-input:focus {
+    border-color: #1D70A2;
+  }
+  
+  /* Buttons */
+  .form-button {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animation Effects */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.5s ease-out;
+ }

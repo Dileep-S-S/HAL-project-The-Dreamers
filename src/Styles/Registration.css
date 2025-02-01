@@ -1,0 +1,78 @@
+.registration-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #F9F7F7; /* Light greyish off-white */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(48, 63, 83, 0.4); /* Dark Blue Shadow */
+    text-align: center;
+}
+
+.registration-title {
+    color: #3F72AF; /* Muted Blue */
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 2; /* Full width for large fields */
+}
+
+.form-label {
+    font-size: 14px;
+    color: #3F72AF; /* Muted Blue */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-input,
+.form-select {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #DBE2EF; /* Pale light blue */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #112D4E; /* Dark Blue */
+    transition: border 0.3s ease-in-out;
+}
+
+.form-input:focus,
+.form-select:focus {
+    border-color: #3F72AF; /* Muted Blue */
+    outline: none;
+}
+
+.upload-input {
+    border: none;
+    background: transparent;
+    color: #112D4E; /* Dark Blue */
+}
+
+.register-btn {
+    grid-column: span 2; /* Full width button */
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #3F72AF; /* Muted Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+    background-color: #112D4E; /* Dark Blue */
+}
