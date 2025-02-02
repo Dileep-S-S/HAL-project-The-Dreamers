@@ -15,6 +15,7 @@ export default function Header() {
           <Link to="/"><img src={logo} alt="logo" /></Link>
         </div>
         <div className='nav-links'>
+          <NavLink to='/' text="Home" currentPath={location.pathname}/>
           <NavLink to="/view" text="View" currentPath={location.pathname} />
           <NavLink to="/rmain" text="Register" currentPath={location.pathname} />
           <NavLink to="./about" text="About" currentPath={location.pathname} />

@@ -1,16 +1,19 @@
 /* General Styles */
 .home {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-radius: 8px;
 }
 
 /* Image Slider */
 .image-slider {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 400px;
   overflow: hidden;
   border-radius: 8px;
@@ -55,7 +58,6 @@ p {
 /* Text Section Styling */
 div {
   text-align: center;
-  padding: 10px;
 }
 
 div p {
@@ -77,4 +79,9 @@ div p {
     font-size: 0.9rem;
     padding: 0 10px;
   }
+}
+.para-dashboard{
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
 }

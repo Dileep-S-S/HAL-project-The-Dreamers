@@ -8,9 +8,8 @@ const ViewVehicle = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedArea, setSelectedArea] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
-
+    
   useEffect(() => {
-    // Fetch vehicle data from the API
     axios
       .get("http://localhost:8080/getvehicle")
       .then((response) => {
@@ -21,7 +20,6 @@ const ViewVehicle = () => {
       });
   }, []);
 
-  // Filter logic
   const filteredVehicles = vehicles.filter((vehicle) => {
     const matchesSearch = vehicle.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           vehicle.address.toLowerCase().includes(searchTerm.toLowerCase());
@@ -36,7 +34,6 @@ const ViewVehicle = () => {
     <div className="laborer-container">
       <h2 className="title">Vehicle</h2>
       
-      {/* Enlarged Search Bar */}
       <div className="large-search-bar">
         <input
           type="text"
@@ -47,7 +44,6 @@ const ViewVehicle = () => {
         <Search className="large-search-icon" size={32} />
       </div>
 
-      {/* Filters */}
       <div className="filter-section">
         <select 
           value={selectedArea}
@@ -76,7 +72,6 @@ const ViewVehicle = () => {
 
       <h3 className="subtitle">Display Nearest Vehicles</h3>
 
-      {/* Vehicle List */}
       <div className="laborer-list">
         {filteredVehicles.length > 0 ? (
           filteredVehicles.map((vehicle) => (

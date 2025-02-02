@@ -33,9 +33,9 @@ const Dashboard = () => {
           />
         ))}
       </div>
-      <div>
+      <div className='para-d'>
         <h2>Gravida</h2>
-        <p>Digital Platform for Labor
+        <p className='para-dashboard'>Digital Platform for Labor
     Develops a web application where labour showcases his skills which will be visible for the 
      Land owners, where he can select or choose the workers who are needed, which in   
      turn boosts up the job opportunities.

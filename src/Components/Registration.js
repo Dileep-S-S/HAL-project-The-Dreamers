@@ -94,7 +94,7 @@ const RegistrationLabor = () => {
       <h2 className="registration-title">Labor Registration</h2>
       <form className="registration-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label className="form-label">Name:</label>
+          <label className="form-label">Name: {latitude} - {longitude}</label>
           <input type="text" value={name} className="form-input" onChange={(e) => setName(e.target.value)} required />
         </div>
 

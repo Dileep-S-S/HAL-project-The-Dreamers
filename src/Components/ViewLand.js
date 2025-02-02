@@ -13,7 +13,7 @@ const ViewLand = () => {
     axios
       .get("http://localhost:8080/getlands")
       .then((response) => {
-        setLands(response.data); // Assuming the response data is an array of lands
+        setLands(response.data); 
       })
       .catch((error) => {
         console.error("There was an error fetching the lands!", error);

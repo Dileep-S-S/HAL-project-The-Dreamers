@@ -11,8 +11,9 @@
   .about-us header h1 {
     text-align: center;
     font-size: 2.5rem;
+    font-weight: bold;
     color: #2c3e50;
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
   
   .about-us section {
@@ -21,7 +22,8 @@
   
   .about-us h2 {
     font-size: 1.8rem;
-    color: #2980b9;
+    color: #000;
+    font-weight: bold;
     margin-bottom: 10px;
   }
   

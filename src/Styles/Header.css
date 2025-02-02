@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 15px 30px;
     height: 60px;
-    background-color: #112D4E;
+    background-color: #000;
     border-bottom: 2px solid #DBE2EF; 
     z-index: 100;
     padding: 40px;
@@ -57,8 +57,8 @@
 }
 
 .headbutton:hover {
-    color: #fff;
-    background-color: #3F72AF; /* Muted Blue */
+    color: #000;
+    background-color: #fff; /* Muted Blue */
 }
 
 .active {
@@ -68,6 +68,6 @@
     text-decoration: none;
     padding: 8px;
     border-radius: 8px;
-    color: #fff;
-    background-color: #3F72AF; /* Muted Blue */
+    color: #000;
+    background-color: #fff; /* Muted Blue */
 }

@@ -1,66 +1,67 @@
-/* General Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
     color: #173753;
+    margin: 0;
+    padding: 0;
   }
   
-  /* Profile Container */
   .profile-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 10px;
+    font-size: medium !important;
+    font-weight: bolder !important;
   }
   
-  /* Profile Card */
   .profile-card {
     background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
   }
   
   .profile-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
-  /* Profile Image */
   .profile-image-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
   }
   
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 3px solid #1D70A2;
+    border: 2px solid #1D70A2;
     transition: transform 0.3s ease;
   }
   
   .profile-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   
-  /* Section Headers */
   .section-header {
     color: #1B4353;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
   }
   
-  /* Edit Button */
   .edit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #1D70A2;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 6px;
     border-radius: 50%;
     transition: all 0.3s ease;
   }
@@ -70,41 +71,23 @@ body {
     transform: scale(1.1);
   }
   
-  /* Contact & Info Sections */
   p {
     color: #173753;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+    font-size: 0.85rem;
+    margin: 3px 0;
   }
   
-  p:hover {
-    color: #1B4353;
-  }
-  
-  /* Skill Rating */
-  .skill-rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .skill-rating:hover {
-    transform: translateX(5px);
-  }
-  
-  /* Form Styles */
   form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
   
   .form-input {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #1B4353;
-    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid #1B4353;
+    border-radius: 4px;
     outline: none;
     transition: border 0.3s ease;
   }
@@ -112,10 +95,17 @@ body {
   .form-input:hover, .form-input:focus {
     border-color: #1D70A2;
   }
+  .form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #1B4353;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+  }
   
-  /* Buttons */
   .form-button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -123,14 +113,13 @@ body {
   
   .form-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Animation Effects */
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
     to {
       opacity: 1;
@@ -138,21 +127,25 @@ body {
     }
   }
   
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
   .animate-fadeIn {
-    animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.4s ease-out;
   }
-  
-  .animate-slideIn {
-    animation: slideIn 0.5s ease-out;
- }
+  .modal-overlay2345{
+    padding: 20px !important;
+  }
+  .modal-content{
+    width: 600px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }

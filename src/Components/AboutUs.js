@@ -20,22 +20,19 @@ const AboutUs = () => {
       </section>
       <section>
         <h2>Our Services</h2>
-        <ul>
-          <li>
-            <strong>Labor Connections:</strong> Laborers can showcase their skills
+        
+            <p><strong>Labor Connections:</strong> Laborers can showcase their skills
             and availability, making it easier for farmers to find the right
             workforce for their needs.
-          </li>
-          <li>
-            <strong>Tool & Machinery Rentals:</strong> Farmers can rent tools,
+            </p>
+          
+            <p><strong>Tool & Machinery Rentals:</strong> Farmers can rent tools,
             tractors, and other equipment from owners to ensure timely and
             efficient agricultural operations.
-          </li>
-          <li>
-            <strong>Land Access:</strong> Farmers can access land for cultivation
-            by renting available plots directly from landowners.
-          </li>
-        </ul>
+            </p>
+            <p><strong>Land Access:</strong> Farmers can access land for cultivation
+            by renting available plots directly from landowners.</p>
+        
       </section>
       <section>
         <h2>Why Choose Us?</h2>
