@@ -15,7 +15,7 @@ import Vehicleregis from './Components/Vehicleregis';
 import ViewVehicle from './Components/ViewVehicle';
 import ViewLand from './Components/ViewLand';
 import Profile from './Components/Profile';
-
+import GroupWork from "./Components/Group.jsx"
 function App() {
   // const { user, setuser } = useContext(Usercontext);
   const [user, setuser] = useState(()=>{
@@ -50,6 +50,7 @@ function App() {
         <Route path="/landregis" element={<Landregestration/>}/>
         <Route path='/vehiclregis' element={<Vehicleregis/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path='/Group' element={<GroupWork/>}/>
         <Route path="*" element={() => <h1>Page not found</h1>} /> 
         </Route>
       </Routes>

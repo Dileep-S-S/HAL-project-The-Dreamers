@@ -16,14 +16,16 @@ export default function Header() {
         </div>
         <div className='nav-links'>
           <NavLink to="/view" text="View" currentPath={location.pathname} />
+         
           <NavLink to="/rmain" text="Register" currentPath={location.pathname} />
-          <NavLink to="./about" text="About" currentPath={location.pathname} />
           
+          `<NavLink to="/group" text="GroupWork" currentPath={location.pathname}/>
           {user ? (
             <NavLink to="./profile" text="Profile" currentPath={location.pathname} />
           ) : (
             <NavLink to="./login" text="Login" currentPath={location.pathname} />
-          )}
+          )} 
+          <NavLink to="./about" text="About" currentPath={location.pathname} />
         </div>
       </div>
       <Outlet />

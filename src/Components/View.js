@@ -12,21 +12,21 @@ const View = () => {
             <div className="dashboard-card">
               <FaUserCog className="dashboard-icon text-primary" />
               <h2 className="dashboard-text">Labor</h2>
-              <p>Lorem Ipsum es simplemente </p>
+              <p>     Information about Labor </p>
             </div> 
           </div>
           <div className="col-12 col-md-4" onClick={()=>{navigate("/ViewVehicle")}}>
             <div className="dashboard-card">
               <FaTools className="dashboard-icon text-primary" />
               <h2 className="dashboard-text">Tools</h2>
-              <p>Lorem Ipsum es simplemente e</p>
+              <p>Information about Vehicles and Tools</p>
             </div>
           </div>
           <div className="col-12 col-md-4" onClick={()=>{navigate("/viewland")}}>
             <div className="dashboard-card">
               <FaLandmark className="dashboard-icon text-primary" />
               <h2 className="dashboard-text">Land</h2>
-              <p>Lorem Ipsum es simplemente el </p>
+              <p>     Information about rent Land</p>
             </div>
           </div>
         </div>
